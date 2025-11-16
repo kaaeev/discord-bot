@@ -37,16 +37,14 @@ control_message = {}
 # -----------------------
 ydl_opts = {
     "format": "bestaudio/best",
+    "extractor_args": {"youtube": {"player_client": "default"}},
+    "cookiefile": "cookies.txt",
     "quiet": True,
     "noplaylist": True,
     "default_search": "auto",
-    "extract_flat": False,
-    "extractor_args": {
-        "youtube": {
-            "player_client": "android"
-        }
-    }
+    "extract_flat": False
 }
+
 
 
 FFMPEG_RECONNECT = "-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5"
@@ -723,6 +721,7 @@ import os
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 bot.run(TOKEN)
+
 
 
 
