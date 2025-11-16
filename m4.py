@@ -713,6 +713,9 @@ async def on_ready():
 # -----------------------
 # Run
 # -----------------------
-TOKEN = "token"
-bot.run(TOKEN)
+import os
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+client.run(TOKEN)
+
 
