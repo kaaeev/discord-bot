@@ -713,5 +713,6 @@ async def on_ready():
 # -----------------------
 # Run
 # -----------------------
-TOKEN = "MTQzOTA2ODA1NzUxMDM0Njg0Mg.GSpSUU.gCqTrnOeY0TwmXr7QN91M__-Rb4B0T4RO8VDJs"
+TOKEN = "token"
 bot.run(TOKEN)
+
